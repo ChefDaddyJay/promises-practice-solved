@@ -37,7 +37,10 @@ export const getPromise = (bool) => {
 
 export const handlePromise = (promise) => {
   // Your code goes here...
-  return promise.then((val) => val).catch((err) => "Uh Oh");
+  return promise.then(
+    (val) => val,
+    (err) => "Uh Oh"
+  );
 };
 
 // === TEST YOURSELF ===
